@@ -1,15 +1,66 @@
+*************** 1 ***************
 message = 'Hello world!'
 print(message)
-
 
 message = 58
 print(message)
 
+*************** 2 ***************
 age = int(input("Сколько тебе лет?"))
-if (age >= 25):
-    print("Тебе можно входить одному!")
-elif (age >= 18) and (age < 25):
-    print("Тебе можно только с мамой войти!")
+if (age >= 21):
+    print("Тебе можно!")
+elif (age >= 18) and (age < 21):
+    print("Тебе можно только с мамой!")
 else:
     print("Тебе сюда нельзя!")
-    
+   
+*************** 3 *************** 
+def hello():
+    print('Привет, мир!')
+
+hello()
+hello()
+hello()
+hello()
+
+x = int(input('Введите первое число:'))
+y = int(input('Введите второе число:'))
+
+def sum(a,b):
+    return a + b
+
+print(sum(x,y))
+
+def f(a):
+    return 2 * a - 2
+
+print(f(2))
+
+def f(a=2):
+    return 2 * a - 2
+
+print(f())
+
+def f(a=2):
+    return 2 * a - 2
+
+print(f(4))
+
+a = 45
+b = 5
+def f(a,b):
+    print(a)
+    print(b)
+
+print(a)
+print(b)
+
+a = 45
+b = 5
+def f():
+    global a
+    a = a + 2
+    print(a)
+
+f()
+print(a)
