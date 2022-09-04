@@ -161,4 +161,33 @@ del(dict['банан'])
 print(dict)
 
 *************** 7 *************** Работа со строками
+# print('Hello world!')
+# print('Cat and dog')
+# print('Hello')
+print('Привет\nПривет\nПривет')
+print('Привет\tПривет')
+print("'текст в кавычках'")
+print("текст \"в\" кавычках")
+text = 'Привет'
+text1 = 'мир!'
+print(text + " " + text1)
+print(text*5) 
+print(text[0])
+print(text[0:3])
+print(text[-1])
+print(text.upper())
+print(text.lower())
+print(text1.capitalize())
+text = 'Привет мир, куда идешь?'
+print(text.split(" "))
+spisok = ["a", "b", "c"]
+print(",".join(spisok))
+print("".join(spisok))
+text3 = "     kjnbugtf njhbg          "
+print(text3.strip())
+print(text3.lstrip())
+print(text3.rstrip())
+text4 = 'ololololololololololololol'
+print(text4.replace('l', 'o'))
+
 
