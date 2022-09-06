@@ -228,3 +228,39 @@ try:
     print(a/b)
 except ZeroDivisionError:
     print("На ноль делить нельзя!")
+    
+    *************** 10 *************** Классы и объекты
+    class House():
+    """описание дома"""
+    def __init__(self, street, numder):
+        self.street = street
+        self.numder = numder
+        self.age = 0
+
+    def build(self):
+        """строит дом"""
+        print("Дом на улице " + self.street + " под номером " + str(self.numder) + " построен.")
+    def age_of_house(self, year):
+        """возраст дома"""
+        self.age += year
+
+House1 = House("Минская", 20)              
+House2 = House("Минская", 22)
+
+print(House1.street)              
+print(House2.numder)
+
+House1.build()
+print(House1.age)
+
+House2.age_of_house(5)
+print(House2.age)
+
+class ProspectHouse(House):
+    """дома на проспекте"""
+    def __init__(self, prospect, numder):
+        super().__init__(self, numder)
+        self.prospect = prospect
+
+PrHouse = ProspectHouse("Машерова", 8)
+print(PrHouse.prospect)
