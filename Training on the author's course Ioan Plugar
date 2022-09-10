@@ -337,7 +337,7 @@ print(len(numbers24))
 numbers25 = frozenset({1, 2, 3, 4, 5, 6, 7})
 print(numbers25)
 
-*************** 12 *************** Множества
+*************** 12 *************** Регулярные выражения. Часть 1
 import re
 
 s = "AC/DCAC/DCAC/DCAC/DCAC/DCAC/DCAC/DCAC/DCAC/DC"
@@ -427,3 +427,31 @@ import re
 s = 'Привет, как дела? А у меня нормально.'
 result = re.findall(r"[бвгджзклмнпрстфхчшщБВГДЖЗКЛМНПРСТФХЧШЩ]\w+", s)
 print(result)
+
+*************** 13 *************** Регулярные выражения. Часть 2
+def rectangle_area(a, b):
+    return a * b
+
+print(rectangle_area(17, 14))
+
+print((lambda a, b: a * b)(17, 14))
+
+
+def maximum(a, b):
+    if a > b:
+        return a
+    else:
+        return b
+
+print(maximum(25, 17))
+
+print((lambda a, b: a if a > b else b)(25, 17))
+
+"""Homework"""
+# 1
+print((lambda a: a * 4)(6)) 
+print('Периметр квадрата = '+str((lambda a: 4*a)(int(input('Введите сторону квадрата: ')))))
+# 2
+print((lambda a, b, c: (a + b + c) / 3)(2, 3, 5))
+print('Среднее арифметическое введенных трех чисел = '+str((lambda a, b, c: (a + b + c) / 3)(int(input('Введите первое число: ')),int(input('Введите второе число: ')),int(input('Введите третье число: ')))))
+
