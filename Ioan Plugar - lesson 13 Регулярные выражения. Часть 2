@@ -1,25 +1,65 @@
-def rectangle_area(a, b):
-    return a * b
+import re
+s = '87+3235656876512     ---joifjjndcaskmnxajfiosn>7 JTNGKSRMFSR;KJB;OD'
+result = re.search(r"j.i", s)
+print(result)
 
-print(rectangle_area(17, 14))
+result = re.search(r"\d", s)
+print(result)
 
-print((lambda a, b: a * b)(17, 14))
+result = re.search(r"\d\d\d", s)
+print(result)
+
+result = re.search(r"\D", s)
+print(result)
+
+result = re.search(r"\s", s)
+print(result)
+
+result = re.search(r"\S", s)
+print(result)
+
+result = re.search(r"\w", s)
+print(result)
+
+result = re.search(r"\W", s)
+print(result)
+
+result = re.search(r"\BJTN", s)
+print(result)
+
+result = re.search(r"\d*", s)
+print(result)
+
+result = re.search(r"\d+", s)
+print(result)
+
+result = re.search(r"[kfjgh]", s)
+print(result)
+result = re.search(r"[4-8]", s)
+print(result)
+result = re.search(r"[4-6]", s)
+print(result)
+
+result = re.search(r"[^4-6]", s)
+print(result)
+
+result = re.search(r"[H|f]", s)
+print(result)
+
+result = re.search(r"\d{5}", s)
+print(result)
+
+result = re.search(r"\d{1,5}", s)
+print(result)
+
+result = re.search(r"\d{4,}", s)
+print(result)
+
+result = re.search(r"\d{,4}", s)
+print(result)
 
 
-def maximum(a, b):
-    if a > b:
-        return a
-    else:
-        return b
-
-print(maximum(25, 17))
-
-print((lambda a, b: a if a > b else b)(25, 17))
-
-"""Homework"""
-# 1
-print((lambda a: a * 4)(6)) 
-print('Периметр квадрата = '+str((lambda a: 4*a)(int(input('Введите сторону квадрата: ')))))
-# 2
-print((lambda a, b, c: (a + b + c) / 3)(2, 3, 5))
-print('Среднее арифметическое введенных трех чисел = '+str((lambda a, b, c: (a + b + c) / 3)(int(input('Введите первое число: ')),int(input('Введите второе число: ')),int(input('Введите третье число: ')))))
+import re
+s = 'Привет, как дела? А у меня нормально.'
+result = re.findall(r"[бвгджзклмнпрстфхчшщБВГДЖЗКЛМНПРСТФХЧШЩ]\w+", s)
+print(result)
