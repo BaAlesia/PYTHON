@@ -1,0 +1,13 @@
+import math
+print(math.factorial(10))
+import math as m
+print(m.factorial(10))
+
+from math import factorial
+print(factorial(10))
+
+import privet
+privet.privet()
+
+def privet():
+    print('Привет, мир!')
