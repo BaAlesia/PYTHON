@@ -1,0 +1,55 @@
+spisok = []
+numbers = [3,4,5,9,10]
+print(numbers)
+
+numbers2 = [3,5,34.1, 'name']
+print(numbers2)
+
+numbers3 = [3,5,34.1, [45,7]]
+print(numbers3)
+
+name1 = 'Кеша'
+name2 = 'Смельчак'
+name3 = 'Попугай'
+print(name1)
+print(name2)
+print(name3)
+
+names = ['Кеша', 'Смельчак', 'Попугай']
+print(names[1])
+print(names[-1])
+
+for name in names:
+    print(name)
+
+names.append('Красавчик')
+print(names)
+
+names.append('Весельчак')
+print(names)
+
+names.pop()
+print(names)
+
+n = names.index('Смельчак')
+print(n)
+
+print(len(names))
+
+numbers = [4, 6, 81, 95, 108, 56]
+numbers.sort()
+print(numbers)
+
+numbers.sort(reverse=True)
+print(numbers)
+
+numbers[1] = 'B'
+print(numbers)
+
+letters = ['sun', 'rain', 'tea', 'at', 'parrot']
+letters.sort()
+print(letters)
+
+symbols = [58, 51, 5444, 58.1, 74.1, 5]
+symbols.sort()
+print(symbols)
