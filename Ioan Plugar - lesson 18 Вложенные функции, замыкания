@@ -1,0 +1,41 @@
+# built-in
+import builtins
+print(dir(builtins))
+
+# global
+y = 2
+def degree(x):
+    return y ** x
+
+print(degree(4))
+
+# local
+def degree1(x):
+    y = 2
+    return y ** x
+
+print(degree1(4))  
+
+# enclosing
+def degree2(x):
+    y = 2
+    def degree_two():
+        return y ** x
+    return degree_two()
+
+print(degree2(4))
+
+def message(x):
+    def print_message(y):
+        return x, y
+    return print_message
+
+d = message(4)
+print(d(8))
+print(d(5))
+
+def message(number):
+    def print_message():
+        return 'Number ' + str(number)
+    return print_message()
+print(message(78))
