@@ -1,1 +1,27 @@
+def my_decor(func):
+    def wrapper():
+        print('start')
+        func()
+        print('end')
+    return wrapper
+
+def my_func():
+    print('Here is the main function')
+
+my = my_decor(my_func)
+my()
+
+def my_decor(func):
+    def wrapper():
+        print('start')
+        func()
+        print('end')
+    return wrapper
+
+@my_decor
+def my_func():
+    print('Here is the main function')
+
+my_func()
+
 
