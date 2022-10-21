@@ -1,0 +1,12 @@
+Целое число - int - 132, 2500, 14
+Строка - str - "Hello!", "Learning Python"
+Число с плавающей точкой - float - 3.15, 27.56
+Комплексное число - complex - 3i, 9 + 8j
+Булево значение - bool - True, False
+Список - list - ['Home', 'Line', 'Street']
+Кортеж - tuple - (2, 8, 9)
+Байты - bytes - N`ss\nt
+Массив байтов - bytearray - bytearray(...)
+Множество - set - set([3, 7, 9])
+Фиксированное множество - frozenset - frozenset(['Helma', 'Elisa'])
+Словарь - dict - {'dog': 'mastif', 'name': 'Barsik', 'color': 'black'}
