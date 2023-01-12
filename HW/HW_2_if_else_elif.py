@@ -75,10 +75,14 @@ if currency_convertor:
     elif target_currency == 'byn':
         currency_result = target_currency_amount * usd_byn_rate
         print(target_currency_amount, byn_item, '=', currency_result, usd_item)
-         
-else:
+    elif target_currency == 'usd':
+        currency_result = target_currency_amount * usd_usd_rate
+        print(target_currency_amount, usd_item, '=', currency_result, usd_item)
+       
+elif currency_convertor == item_3:
     print('Переменная currency_convertor = ', item_3)
-
-
+    
+else:
+    print('Unknow currency')
 
 
